@@ -1,8 +1,7 @@
 
-
 html, body {
   overflow-x: hidden; /* Temporary fix */
-   background-color: white !important;
+ 
 }
 
 * {
@@ -424,6 +423,20 @@ body {
         text-align: center;
         padding: 20px; /* Optional for responsiveness */
     }
+}
+
+.call .hero-header {
+    background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)),
+              url(../img/call.avif);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
