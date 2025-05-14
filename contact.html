@@ -142,27 +142,44 @@
                     <h5>Get In Touch</h5>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos</p>
                     <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bounce"
+                            style="width: 50px; height: 50px; background-color: #30b1dc; border-radius: 10px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
                         </div>
-                        <div class="ms-3">
-                            <h5 class="text-primary">Office</h5>
-                            <p class="mb-0">123 Street, New York, USA</p>
+                            <style>
+                                @keyframes bounce {
+                                     0%, 100% {
+                                         transform: translateY(0);
+                                        }
+                                    50% {
+                                          transform: translateY(-10px);
+                                        }
+                               }
+                               .bounce {
+                                        animation: bounce 1s infinite;
+                                    } 
+                            </style>
+
+                        <div class="ms-3"> 
+                           <h5 style="color:#19b2ee ;">Office</h5>
+                            <p class="mb-0">Accra-Ghana</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bounce"
+                             style="width: 50px; height: 50px; background-color: #30b1dc; border-radius: 10px;">
+                             <i class="fa fa-phone-alt text-white"></i>
+                        </div>    
                         <div class="ms-3">
                             <h5 class="text-primary">Mobile</h5>
-                            <p class="mb-0">+012 345 67890</p>
+                            <p class="mb-0">+233 534829203</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                       <div class="d-flex align-items-center justify-content-center flex-shrink-0 bounce" style="width: 50px; height: 50px; background-color:  #30b1dc; border-radius: 10px;">
                             <i class="fa fa-envelope-open text-white"></i>
                         </div>
+
                         <div class="ms-3">
                             <h5 class="text-primary">Email</h5>
                             <p class="mb-0">info@example.com</p>
@@ -180,30 +197,48 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" style="color: black;">
+
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" style="color: black;">
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" style="color: black;">
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px" style="color: black;"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <div class="col-12">
+                                 <style>
+                                   .btn-custom {
+                                    background-color: #30b1dc;
+                                    color: white;
+                                    width: 100%;
+                                    padding: 1rem;
+                                    border: none;
+                                    transition: background-color 0.3s ease;
+                                    }
+                                    .btn-custom:hover {
+                                         background-color: #0077b6; /* Deep blue color */
+                                    }
+                                  </style> 
+                                 <div class="col-12">
+                                    <button class="btn-custom" type="submit">Send Message</button>
+                                  </div>
+                               </div>
                             </div>
                         </div>
                     </form>
